@@ -1,0 +1,70 @@
+<!--
+  Generated template for the DriverratingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>driverrating</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <!-- <rating [(ngModel)]="rate"
+    readOnly="false" // default value, so it can be ommited
+    max="5" // default value
+    emptyStarIconName="star-outline" // default value
+    halfStarIconName="star-half" // default value
+    starIconName="star" // default value
+    nullable="false" // default value
+    (ngModelChange)="onModelChange($event)"></rating> -->
+
+    <!-- <ion-card >
+      <ion-card-header>
+          Select Pickup Location
+        </ion-card-header>
+        <button ion-button block>
+          <ion-select [(ngModel)]="selectedpack" placeholder='select'  (ngModelChange)="optionspackpicked()">
+            <ion-option [value]="parkpick"  *ngFor="let parkpick of park; let i = index">{{parkpick.park}}  &nbsp;- {{parkpick.price}}</ion-option>
+          </ion-select>
+        </button>
+        </ion-card> -->
+
+        <ion-card>
+          <ion-card-header>
+              Rate Your Driver
+            </ion-card-header>
+            <button ion-button block>
+              <ion-select [(ngModel)]="selecteddriver" placeholder='select'  (ngModelChange)="optionsselecteddriver()">
+                <ion-option [value]="driverpick.driver"  *ngFor="let driverpick of driver; let i = index">{{driverpick.driver}}</ion-option>
+              </ion-select>
+            </button>
+        </ion-card>
+
+
+        <ion-grid>
+          <ion-row justify-content-center>
+
+            <rating [(ngModel)]="rate"
+            readOnly="false"
+            max="5"
+            emptyStarIconName="star-outline"
+            halfStarIconName="star-half"
+            starIconName="star"
+            nullable="false"
+            (ngModelChange)="onModelChange($event)">
+          </rating>
+
+       </ion-row>
+
+       <ion-row justify-content-center>
+
+          <button id="butmargin" class="animated slideInUp delay-1s" ion-button round>Rate Me</button>
+
+      </ion-row>
+           </ion-grid>
+

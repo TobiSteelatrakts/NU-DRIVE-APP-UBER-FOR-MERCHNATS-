@@ -1,0 +1,21 @@
+page-driverrating {
+
+
+  ul {
+    padding: 0px;
+    &.rating li {
+      padding: 5px 10px !important;
+      background: none;
+      color:rgba(255,87,0 ,1);
+
+      ion-icon {
+        font-size: 30px;
+      }
+    }
+  }
+
+  #butmargin {
+    margin-top: 20px;
+  }
+
+}

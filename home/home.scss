@@ -1,0 +1,29 @@
+page-home {
+  #floating-panel {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+  }
+  .align-text-middle {
+    display: flex;
+    justify-content: center;
+}
+
+div#noAds{
+
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+}
+
+
+
+}

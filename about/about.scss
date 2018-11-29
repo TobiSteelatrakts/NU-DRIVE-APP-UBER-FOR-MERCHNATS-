@@ -1,0 +1,21 @@
+page-about {
+  #newusualhoder {
+  background-image: url("../assets/icon/newusual.jpg"); /* The image used *
+   /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 200px !important;
+  margin-bottom: 30px;
+  }
+
+
+  #alignme {
+  font-size: 16px;
+    text-align: center;
+  }
+
+  #butmargin {
+    margin-top: 20px;
+  }
+}
