@@ -1,0 +1,58 @@
+<!--
+  Generated template for the UserbookingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>userbooking</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+
+  <ion-card *ngIf="loggedin==true">
+    <ion-card-header>
+        Recent Bookings
+      </ion-card-header>
+
+<ion-list *ngFor="let book of userbookings" detail-push>
+
+
+
+          <ion-card-content>
+              <ion-item>
+
+                  <ion-avatar item-start>
+                      <ion-icon ios="ios-car" md="md-car"></ion-icon>
+                  </ion-avatar>
+                  <ion-label stacked>
+                      {{book ['datetime']}}
+                    </ion-label>
+                    <ion-label stacked>
+                        {{book['vehicle_id']}}
+                      </ion-label>
+                      <ion-label stacked>
+                          {{book['park']}}
+                        </ion-label>
+                        <ion-label stacked>
+                           N&nbsp; {{book['price']}}
+                          </ion-label>
+                          <ion-label stacked>
+                              {{book['Ref']}}
+                             </ion-label>
+                            <button ion-button outline item-end> <ion-icon name="card"></ion-icon>&nbsp; View
+
+                          </button>
+                </ion-item>
+          </ion-card-content>
+</ion-list>
+</ion-card>
+
+
+</ion-content>

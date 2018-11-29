@@ -1,0 +1,55 @@
+<!--
+  Generated template for the ModaypayPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+      <ion-buttons start>
+
+
+
+          <button ion-button (click)="tohome()"><ion-icon name="close"></ion-icon>Close</button>
+
+        </ion-buttons>
+    <ion-title>modaypay</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <button ion-button block color="secondary"
+
+  angular4-paystack
+key='pk_test_6c63be1c5093fd7551e60ac0b60b917a81cb143c'
+email='steelatrakts@gmail.com'
+amount='5'
+[ref]=randdd
+(close)='paymentCancel()'
+(callback)='paymentDone($event)'
+>PROCEED TO PAY</button>
+
+<!-- <angular4-paystack
+key='pk_test_6c63be1c5093fd7551e60ac0b60b917a81cb143c'
+[email]="'steelatrakts@gmail.com'"
+[amount]='5'
+[ref]=randdd
+(close)='paymentCancel()'
+(callback)='paymentDone($event)'
+>Pay with Paystack</angular4-paystack> -->
+<!--
+<angular4-paystack-embed
+key='pk_test_6c63be1c5093fd7551e60ac0b60b917a81cb143c'
+[email]="'steelatrakts@gmail.com'"
+[amount]='5'
+[ref]=randdd
+(close)='paymentCancel()'
+(callback)='paymentDone($event)'
+>here</angular4-paystack-embed> -->
+<p>We won't store your credit card details</p>
+<button ion-button (click)="pay()">Logout</button>
+</ion-content>

@@ -1,0 +1,86 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Signup</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <!-- <div class="loginimg">
+
+      </div>
+        <ion-list>
+
+            <ion-item>
+              <ion-label>Name</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>Account</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Phone Number</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>BVN</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+
+              <ion-item>
+                  <ion-label>Username</ion-label>
+                  <ion-input type="text"></ion-input>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label>Password</ion-label>
+                    <ion-input type="password"></ion-input>
+                  </ion-item>
+
+          </ion-list> -->
+
+          <form  id="formNewProduct" name ="formNewProduct" #productData="ngForm" (ngSubmit) = "onsubmitpin(productData.value)">
+            <ion-list>
+
+              <ion-item>
+                <ion-label>Username</ion-label>
+                <ion-input type="text" name="name" id="user"  required autofocus [(ngModel)]='name'></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Password</ion-label>
+                <ion-input type="password" name="password" id="pass"  required autofocus [(ngModel)]='password'></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Phone Number</ion-label>
+                <ion-input type="text" name="phone" id="user"  required autofocus [(ngModel)]='phone'></ion-input>
+              </ion-item>
+
+              </ion-list>
+
+              <div>
+                  <button ion-button secondary block type="submit" id="butmargin">Sign Up</button>
+                <!-- <button ion-button secondary block (click)="logmein()" [disabled]="!closed" type="submit">Sign In</button> -->
+              </div>
+            </form>
+
+
+
+          <!-- <div padding>
+            <button ion-button secondary block (click)="registerme()">Sign In</button>
+          </div> -->
+
+</ion-content>
